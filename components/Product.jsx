@@ -28,7 +28,7 @@ export const PRODUCTS = {
             id: 'kitnether',
             price: 5.00,
             description: 'Blocos de construção aleatórios da dimensão do Nether.',
-            expanded_description: 'Na compra de um Kit Nether, você pode receber de 1 unidade a 1 pack de cada um dos seguintes itens: netherrack, areias da alma, pedras-negras, madeiras (carmesim OU distorcida), blocos de tijolos do nether, pedra luminosa e cogubrilho. As quantidades são aleatórias por compra e dependerão da sua sorte, com pelo menos 1 de cada item sendo garantido.',
+            expanded_description: 'Na compra de um Kit Nether, você pode receber de 1 unidade a 1 pack de cada um dos seguintes itens: netherrack, areias da alma, pedras-negras, madeiras (carmesim OU distorcida), blocos de tijolos do nether, pedra luminosa, cogubrilho e cristal de quartzo. As quantidades são aleatórias por compra e dependerão da sua sorte, com pelo menos 1 de cada item sendo garantido.',
             icon: 'https://minecraft.wiki/images/Chest.gif?ca959',
             fields: [
                 {
