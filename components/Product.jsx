@@ -22,7 +22,28 @@ function translateStatus(status) {
  * Produtos disponíveis na loja
  */
 export const PRODUCTS = {
-    'Cargos': [
+    'Construção': [
+        {
+            name: 'Kit Nether',
+            id: 'kitnether',
+            price: 5.00,
+            description: 'Blocos de construção aleatórios da dimensão do Nether.',
+            expanded_description: 'Na compra de um Kit Nether, você pode receber os seguintes itens:\n- 8-128 netherrack\n- 8-128 areias da alma\n- 8-128 pedras-negra\n- 8-128 madeiras (carmesim OU distorcida)\n- 8-128 blocos de tijolos do nether\n\nAs quantidades são aleatórias por compra e dependerão da sua sorte, com pelo menos 1 de cada item sendo garantidos.',
+            icon: 'https://minecraft.wiki/images/Ender_Chest_JE2_BE2.gif?90e80',
+            fields: [
+                {
+                    name: 'quantity',
+                    type: 'number',
+                    placeholder: 'Quantidade de kits (1-99)',
+                    required: true,
+                    min: 1,
+                    max: 99,
+                    value: 1,
+                },
+            ],
+        },
+    ],
+    /*'Cargos': [
         {
             name: 'Apoiador',
             id: 'apoiador',
@@ -31,22 +52,22 @@ export const PRODUCTS = {
             expanded_description: 'Mostre que você é um verdadeiro apoiador do Terra Média com o rank Apoiador! Com ele, você ganha a satisfação de ajudar o servidor a crescer e melhorar cada vez mais. O rank Apoiador é vitalício, ou seja, você não precisa se preocupar em renovar ou perder suas vantagens. Além disso, você estará contribuindo para manter o servidor ativo, com novidades e eventos para toda a comunidade. Seja um Apoiador e faça parte dessa jornada!',
             icon: 'https://minecraft.wiki/images/Golden_Apple_JE2_BE2.png?aa827',
         },
-        /*{
+        {
             name: 'VIP (30 dias)',
             id: 'vip1',
             price: 8.86,
             description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais como redução no tempo de espera do /home e do /tpa, kits semanais (kit VIP), e 3 homes a mais de brinde!',
             expanded_description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais como redução no tempo de espera do /home e do /tpa, kits semanais (kit VIP), e 3 homes a mais de brinde! Além disso, você ajuda a manter o servidor ativo e em crescimento. O VIP dura 30 dias e é renovável.',
             icon: 'https://minecraft.wiki/images/Nether_Star.gif?fb01f',
-        },*/
-    ],
+        },
+    ],*/
 }
 
 /**
  * Cupons disponíveis
  */
 export const COUPONS = {
-    'EIMANESMP': 0.10
+    'DOMINIO': 0.10
 }
 
 /**

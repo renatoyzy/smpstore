@@ -34,8 +34,8 @@ async function sendDiscordNotification({ player, productName, amount = 1, quanti
  */
 function buildCommand({ player, product, extra, quantity=1 }) {
   switch (product) {
-    case 'home':
-      return `smpstore home ${player} ${quantity}`;
+    case 'kitnether':
+      return `smpstore kitnether ${player} ${quantity}`;
     case 'apoiador':
       return `smpstore apoiador ${player}`;
     case 'vip1':
