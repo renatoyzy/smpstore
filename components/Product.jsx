@@ -26,9 +26,9 @@ export const PRODUCTS = {
         {
             name: 'Kit Nether',
             id: 'kitnether',
-            price: 5.00,
+            price: 5.99,
             description: 'Blocos de construção aleatórios da dimensão do Nether.',
-            expanded_description: 'Na compra de um Kit Nether, você pode receber de 1 unidade a 1 pack de cada um dos seguintes itens: netherrack, areias da alma, pedras-negras, madeiras (carmesim OU distorcida), blocos de tijolos do nether, pedra luminosa, cogubrilho e cristal de quartzo. As quantidades são aleatórias por compra e dependerão da sua sorte, com pelo menos 1 de cada item sendo garantido.',
+            expanded_description: 'Na compra de um Kit Nether, você pode receber de 1 unidade a 1 pack de cada um dos seguintes itens: netherrack, areias da alma, pedras-negras, madeiras (carmesim OU distorcida), blocos de tijolos do nether, pedra luminosa, cogubrilho, cristal de quartzo, blocos de fungo do nether (azul OU vermelho, será o mesmo que a madeira). As quantidades são aleatórias por compra e dependerão da sua sorte, com pelo menos 1 de cada item sendo garantido.',
             icon: 'https://minecraft.wiki/images/Chest.gif?ca959',
             fields: [
                 {
@@ -45,9 +45,9 @@ export const PRODUCTS = {
         {
             name: 'Kit End',
             id: 'kitend',
-            price: 4.00,
+            price: 5.99,
             description: 'Blocos de construção aleatórios da dimensão do The End.',
-            expanded_description: 'Na compra de um Kit End, você pode receber de 1 unidade a 1 pack de cada um dos seguintes itens: pedra do end, obsidian, lâmpada do end e bloco púrpura. As quantidades são aleatórias por compra e dependerão da sua sorte, com pelo menos 1 de cada item sendo garantido.',
+            expanded_description: 'Na compra de um Kit End, você pode receber de 1 unidade a 1 pack de cada um dos seguintes itens: pedra do end, obsidian, lâmpada do end e bloco púrpura. As quantidades são aleatórias por compra e dependerão da sua sorte, com pelo menos 1 de cada item sendo garantido. Além disso, você ganha uma quantidade de 0 a 4 cascos de shulker.',
             icon: 'https://minecraft.wiki/images/Ender_Chest_JE2_BE2.gif?90e80',
             fields: [
                 {
@@ -86,7 +86,11 @@ export const PRODUCTS = {
  * Cupons disponíveis
  */
 export const COUPONS = {
-    'DOMINIO': 0.10
+    'MEA': 0.05,
+    'JAKE': 0.05,
+    'JUAUM': 0.05,
+    'WOLFS': 0.05,
+    'GATINHO': 0.05,
 }
 
 /**
