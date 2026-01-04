@@ -70,7 +70,7 @@ export const PRODUCTS = {
             description: 'Mostre que você é um verdadeiro apoiador do Terra Média com o rank Apoiador! Com ele, você ganha a satisfação de ajudar o servidor a crescer e melhorar cada vez mais.',
             expanded_description: 'Mostre que você é um verdadeiro apoiador do Terra Média com o rank Apoiador! Com ele, você ganha a satisfação de ajudar o servidor a crescer e melhorar cada vez mais. O rank Apoiador é vitalício, ou seja, você não precisa se preocupar em renovar ou perder suas vantagens. Além disso, você estará contribuindo para manter o servidor ativo, com novidades e eventos para toda a comunidade. Seja um Apoiador e faça parte dessa jornada!',
             icon: 'https://minecraft.wiki/images/Golden_Apple_JE2_BE2.png?aa827',
-        }/*,
+        },
         {
             name: 'VIP (30 dias)',
             id: 'vip1',
@@ -78,7 +78,7 @@ export const PRODUCTS = {
             description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais como redução no tempo de espera do /home e do /tpa, kits semanais (kit VIP), e 3 homes a mais de brinde!',
             expanded_description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais como redução no tempo de espera do /home e do /tpa, kits semanais (kit VIP), e 3 homes a mais de brinde! Além disso, você ajuda a manter o servidor ativo e em crescimento. O VIP dura 30 dias e é renovável.',
             icon: 'https://minecraft.wiki/images/Nether_Star.gif?fb01f',
-        },*/
+        },
     ],
 }
 

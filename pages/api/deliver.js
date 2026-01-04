@@ -35,7 +35,7 @@ async function sendDiscordNotification({ player, productName, amount = 1, quanti
                 },
                 {
                     "type": 10,
-                    "content": `${fields.map(f => `- **${f.name}:** \`${f.value}\``).join('\n')}`
+                    "content": fields.map(f => `- **${f.name}:** ${f.value}`).join('\n')
                 },
                 {
                     "type": 10,
