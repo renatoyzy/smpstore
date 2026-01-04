@@ -14,11 +14,10 @@ async function sendDiscordNotification({ player, productName, amount = 1, quanti
   Number(quantity) > 1 && fields.push({ name: "Quantidade", value: `${quantity}`, inline: true });
   coupon && fields.push({ name: "Cupom", value: `\`${coupon}\``, inline: true });
 
-  await fetch(webhookUrl, {
+  await fetch(webhookUrl+'?with_components=true', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      "flags": 32768,
       "components": [
         {
             "type": 17,
