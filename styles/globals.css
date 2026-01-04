@@ -35,6 +35,7 @@ body {
   overflow-x: hidden;
   width: 100dvw;
   min-height: 100dvh;
+  background-color: #024e07;
 }
 
 body::before {
@@ -43,7 +44,7 @@ body::before {
   top: 0;
   left: 0;
   width: 100dvw;
-  height: 100dvh;
+  height: 100lvh;
   background-image: url('/images/wallpaper.png');
   background-size: cover;
   background-position: center;
