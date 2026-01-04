@@ -14,58 +14,18 @@ async function sendDiscordNotification({ player, productName, amount = 1, quanti
   Number(quantity) > 1 && fields.push({ name: "Quantidade", value: `${quantity}`, inline: true });
   coupon && fields.push({ name: "Cupom", value: `\`${coupon}\``, inline: true });
 
-  await fetch(webhookUrl+'?with_components=true', {
+  const embed = {
+    title: "🛒 Nova compra no Terra Média!",
+    color: 0x00FF00,
+    fields,
+    timestamp: new Date().toISOString(),
+    footer: { text: "Terra Média - Minecraft de verdade!" }
+  };
+
+  await fetch(webhookUrl, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      "components": [
-        {
-            "type": 17,
-            "accent_color": 65280,
-            "spoiler": false,
-            "components": [
-                {
-                    "type": 10,
-                    "content": "## 🛒 Nova compra no Terra Média!"
-                },
-                {
-                    "type": 14,
-                    "divider": true,
-                    "spacing": 1
-                },
-                {
-                    "type": 10,
-                    "content": fields.map(f => `- **${f.name}:** ${f.value}`).join('\n')
-                },
-                {
-                    "type": 10,
-                    "content": `-# <t:${Math.ceil(Date.now() / 1000)}:f>`
-                },
-                {
-                    "type": 14,
-                    "divider": true,
-                    "spacing": 1
-                },
-                {
-                    "type": 1,
-                    "components": [
-                        {
-                            "type": 2,
-                            "style": 5,
-                            "label": "Comprar também",
-                            "emoji": {
-                                "name": "🛍️",
-                                "id": null
-                            },
-                            "disabled": false,
-                            "url": "https://smpraiz.com.br/shop"
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
-    }),
+    body: JSON.stringify({ embeds: [embed] }),
   });
 }
 
