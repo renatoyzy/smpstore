@@ -8,8 +8,8 @@ export default function Privacy() {
   return (
     <>
       <CustomHead
-        pageTitle="Terra Média - Política de Privacidade"
-        pageDescription="Saiba como o Terra Média coleta, usa e protege suas informações pessoais em nossa loja online."
+        pageTitle="Ei Mine - Política de Privacidade"
+        pageDescription="Saiba como o Ei Mine coleta, usa e protege suas informações pessoais em nossa loja online."
         pageUrl="https://smpraiz.com.br/privacy"
       />
 
@@ -36,7 +36,7 @@ export default function Privacy() {
               Nosso site pode conter links para sites externos que não são de nossa responsabilidade. Recomendamos que você leia as respectivas políticas de privacidade desses sites ao acessá-los.
             </p>
             <p>
-              O uso contínuo ou realização de qualquer compra em nosso site será considerado como aceitação das nossas práticas de privacidade. Se tiver dúvidas sobre como tratamos dados pessoais, entre em contato conosco no <Link href={'/discord'}>Discord do Terra Média</Link> antes de usar a loja.
+              O uso contínuo ou realização de qualquer compra em nosso site será considerado como aceitação das nossas práticas de privacidade. Se tiver dúvidas sobre como tratamos dados pessoais, entre em contato conosco no <Link href={'/discord'}>Discord do Ei Mine</Link> antes de usar a loja.
             </p>
           </div>
 

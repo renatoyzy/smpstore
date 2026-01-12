@@ -34,12 +34,12 @@ export default function Home() {
         <main className={styles.main}>
           
           <h1>
-            Bem-vindo(a) ao Terra Média!
+            Bem-vindo(a) ao Ei Mine!
           </h1>
 
           <section className={styles.container}>
             <p>
-              O Terra Média é um servidor de Minecraft com temática de mundo antigo,
+              O Ei Mine é um servidor de Minecraft com temática de mundo antigo,
               que implementa inúmeras mecânicas inovadoras para proporcionar uma
               experiência única e imersiva de interação entre os reinos e os jogadores.
             </p>

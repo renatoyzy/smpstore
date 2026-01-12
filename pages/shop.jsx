@@ -28,8 +28,8 @@ export default function Shop() {
   return (
     <>
       <CustomHead 
-        pageTitle="Terra Média - Loja!"
-        pageDescription="Compre ranks, kits e outros itens cosméticos para o Terra Média. Apoie o servidor e melhore sua experiência de jogo!"
+        pageTitle="Ei Mine - Loja!"
+        pageDescription="Compre ranks, kits e outros itens cosméticos para o Ei Mine. Apoie o servidor e melhore sua experiência de jogo!"
         pageUrl="https://smpraiz.com.br"
       />
 
