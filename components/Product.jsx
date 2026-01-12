@@ -26,7 +26,7 @@ export const PRODUCTS = {
         {
             name: 'VIP',
             id: 'vip',
-            price: 8.86,
+            price: 10.1,
             description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais como melhorias cosméticas e o /ec!',
             expanded_description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais como melhorias cosméticas e o /ec! Além disso, você ajuda a manter o servidor ativo e em crescimento. O VIP dura 30 dias e é renovável.',
             icon: 'https://minecraft.wiki/images/Golden_Apple_JE2_BE2.png?aa827',
