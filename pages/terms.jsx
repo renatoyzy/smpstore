@@ -10,7 +10,7 @@ export default function Terms() {
       <CustomHead
         pageTitle="Ei Mine - Termos de Uso"
         pageDescription="Leia os termos de uso da loja do Ei Mine e saiba mais sobre suas responsabilidades ao utilizar nossos serviços."
-        pageUrl="https://smpraiz.com.br/terms"
+        pageUrl="https://eiminestore.vercel.app//terms"
       />
 
       <MainLayout>

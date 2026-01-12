@@ -4,7 +4,7 @@ import MainLayout from "@/layout/MainLayout";
 import Product, { PRODUCTS } from "@/components/Product";
 import CustomHead from "@/components/CustomHead";
 
-export default function Shop() {
+export default function Home() {
 
   const [status, setStatus] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -12,7 +12,7 @@ export default function Shop() {
   useEffect(() => {
     async function fetchStatus() {
       try {
-        const res = await fetch('https://api.mcstatus.io/v2/status/java/br-enx-1.enxadahost.com:10295');
+        const res = await fetch('https://api.mcstatus.io/v2/status/java/enx-cirion-38.enx.host:11659');
         const data = await res.json();
         setStatus(data);
         console.log(data)
@@ -30,7 +30,7 @@ export default function Shop() {
       <CustomHead 
         pageTitle="Ei Mine - Loja!"
         pageDescription="Compre ranks, kits e outros itens cosméticos para o Ei Mine. Apoie o servidor e melhore sua experiência de jogo!"
-        pageUrl="https://smpraiz.com.br"
+        pageUrl="https://eiminestore.vercel.app/"
       />
 
       <MainLayout>

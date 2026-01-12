@@ -10,7 +10,7 @@ export default function Privacy() {
       <CustomHead
         pageTitle="Ei Mine - Política de Privacidade"
         pageDescription="Saiba como o Ei Mine coleta, usa e protege suas informações pessoais em nossa loja online."
-        pageUrl="https://smpraiz.com.br/privacy"
+        pageUrl="https://eiminestore.vercel.app//privacy"
       />
 
       <MainLayout>

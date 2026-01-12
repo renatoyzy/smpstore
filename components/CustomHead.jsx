@@ -15,7 +15,7 @@ export default function CustomHead({
     pageDescription="Participe do SMP mais raiz do Brasil, com semi-anarquia, liberdade e sobrevivência de verdade!",
     pageImage="/favicon.png",
     pageImageAlt="Ícone do Ei Mine",
-    pageUrl="https://smpraiz.com.br"
+    pageUrl="https://eiminestore.vercel.app/"
 }) {
     return (
         <Head>
