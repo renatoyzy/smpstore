@@ -8,8 +8,8 @@ export default function Terms() {
   return (
     <>
       <CustomHead
-        pageTitle="Ei Mine - Termos de Uso"
-        pageDescription="Leia os termos de uso da loja do Ei Mine e saiba mais sobre suas responsabilidades ao utilizar nossos serviços."
+        pageTitle="Servidor Eterno do Ei Mine - Termos de Uso"
+        pageDescription="Leia os termos de uso da loja do Servidor Eterno do Ei Mine e saiba mais sobre suas responsabilidades ao utilizar nossos serviços."
         pageUrl="https://eiminestore.vercel.app//terms"
       />
 

@@ -15,11 +15,11 @@ async function sendDiscordNotification({ player, productName, amount = 1, quanti
   coupon && fields.push({ name: "Cupom", value: `\`${coupon}\``, inline: true });
 
   const embed = {
-    title: "🛒 Nova compra no Ei Mine!",
+    title: "🛒 Nova compra no servidor!",
     color: 0x00FF00,
     fields,
     timestamp: new Date().toISOString(),
-    footer: { text: "Ei Mine - Minecraft de verdade!" }
+    footer: { text: "Servidor eterno do Ei Mine - Minecraft de verdade!" }
   };
 
   await fetch(webhookUrl, {
@@ -34,10 +34,8 @@ async function sendDiscordNotification({ player, productName, amount = 1, quanti
  */
 function buildCommand({ player, product, extra, quantity=1 }) {
   switch (product) {
-    case 'kitnether':
-      return `smpstore kitnether ${player} ${quantity}`;
-    case 'kitend':
-      return `smpstore kitend ${player} ${quantity}`;
+    case 'vip':
+      return `smpstore vip ${player} ${quantity}`;
     default:
       return `msg ${player} Obrigado pela compra no Ei Mine!`;
   }

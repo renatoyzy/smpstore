@@ -28,8 +28,8 @@ export default function Home() {
   return (
     <>
       <CustomHead 
-        pageTitle="Ei Mine - Loja!"
-        pageDescription="Compre ranks, kits e outros itens cosméticos para o Ei Mine. Apoie o servidor e melhore sua experiência de jogo!"
+        pageTitle="Servidor Eterno do Ei Mine - Loja"
+        pageDescription="Compre produtos para o Servidor Eterno do Ei Mine. Apoie o servidor e melhore sua experiência de jogo!"
         pageUrl="https://eiminestore.vercel.app/"
       />
 

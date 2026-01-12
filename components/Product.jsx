@@ -22,75 +22,34 @@ function translateStatus(status) {
  * Produtos disponíveis na loja
  */
 export const PRODUCTS = {
-    'Construção': [
+    'Produtos': [
         {
-            name: 'Kit Nether',
-            id: 'kitnether',
-            price: 5.99,
-            description: 'Blocos de construção aleatórios da dimensão do Nether.',
-            expanded_description: 'Na compra de um Kit Nether, você pode receber de 1 unidade a 1 pack de cada um dos seguintes itens: netherrack, areias da alma, pedras-negras, madeiras (carmesim OU distorcida), blocos de tijolos do nether, pedra luminosa, cogubrilho, cristal de quartzo, blocos de fungo do nether (azul OU vermelho, será o mesmo que a madeira). As quantidades são aleatórias por compra e dependerão da sua sorte, com pelo menos 1 de cada item sendo garantido.',
-            icon: 'https://minecraft.wiki/images/Chest.gif?ca959',
-            fields: [
-                {
-                    name: 'quantity',
-                    type: 'number',
-                    placeholder: 'Quantidade de kits (1-100)',
-                    required: true,
-                    min: 1,
-                    max: 100,
-                    value: 1,
-                },
-            ],
-        },
-        {
-            name: 'Kit End',
-            id: 'kitend',
-            price: 5.99,
-            description: 'Blocos de construção aleatórios da dimensão do The End.',
-            expanded_description: 'Na compra de um Kit End, você pode receber de 1 unidade a 1 pack de cada um dos seguintes itens: pedra do end, obsidian, lâmpada do end e bloco púrpura. As quantidades são aleatórias por compra e dependerão da sua sorte, com pelo menos 1 de cada item sendo garantido. Além disso, você ganha uma quantidade de 0 a 4 cascos de shulker.',
-            icon: 'https://minecraft.wiki/images/Ender_Chest_JE2_BE2.gif?90e80',
-            fields: [
-                {
-                    name: 'quantity',
-                    type: 'number',
-                    placeholder: 'Quantidade de kits (1-100)',
-                    required: true,
-                    min: 1,
-                    max: 100,
-                    value: 1,
-                },
-            ],
-        }
-    ],
-    /*'Cargos': [
-        {
-            name: 'Apoiador',
-            id: 'apoiador',
-            price: 0.01,
-            description: 'Mostre que você é um verdadeiro apoiador do Ei Mine com o rank Apoiador! Com ele, você ganha a satisfação de ajudar o servidor a crescer e melhorar cada vez mais.',
-            expanded_description: 'Mostre que você é um verdadeiro apoiador do Ei Mine com o rank Apoiador! Com ele, você ganha a satisfação de ajudar o servidor a crescer e melhorar cada vez mais. O rank Apoiador é vitalício, ou seja, você não precisa se preocupar em renovar ou perder suas vantagens. Além disso, você estará contribuindo para manter o servidor ativo, com novidades e eventos para toda a comunidade. Seja um Apoiador e faça parte dessa jornada!',
-            icon: 'https://minecraft.wiki/images/Golden_Apple_JE2_BE2.png?aa827',
-        },
-        {
-            name: 'VIP (30 dias)',
-            id: 'vip1',
+            name: 'VIP',
+            id: 'vip',
             price: 8.86,
-            description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais como redução no tempo de espera do /home e do /tpa, kits semanais (kit VIP), e 3 homes a mais de brinde!',
-            expanded_description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais como redução no tempo de espera do /home e do /tpa, kits semanais (kit VIP), e 3 homes a mais de brinde! Além disso, você ajuda a manter o servidor ativo e em crescimento. O VIP dura 30 dias e é renovável.',
-            icon: 'https://minecraft.wiki/images/Nether_Star.gif?fb01f',
+            description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais como melhorias cosméticas e o /ec!',
+            expanded_description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais como melhorias cosméticas e o /ec! Além disso, você ajuda a manter o servidor ativo e em crescimento. O VIP dura 30 dias e é renovável.',
+            icon: 'https://minecraft.wiki/images/Golden_Apple_JE2_BE2.png?aa827',
+            fields: [
+                {
+                    name: 'quantity',
+                    type: 'number',
+                    placeholder: 'Meses (1-100)',
+                    required: true,
+                    min: 1,
+                    max: 100,
+                    value: 1,
+                },
+            ],
         },
-    ],*/
+    ],
 }
 
 /**
  * Cupons disponíveis
  */
 export const COUPONS = {
-    'MEA': 0.05,
-    'JAKE': 0.05,
-    'JUAUM': 0.05,
-    'WOLFS': 0.05,
-    'GATINHO': 0.05,
+    'SOUADM': 0.99,
 }
 
 /**

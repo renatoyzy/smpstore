@@ -22,7 +22,7 @@ export default function MainLayout({ children }) {
     return (
         <>
             <header className={styles.header}>
-                <h1>Ei Mine</h1>
+                <h1>Ei Mine Store</h1>
 
                 <nav>
                     {navLinks.map(link => (
@@ -47,6 +47,10 @@ export default function MainLayout({ children }) {
             <main className={styles.main}>
                 {children}
             </main>
+
+            <span className={styles.credit}>
+                © feito pelo Renato
+            </span>
         </>
     )
 }
