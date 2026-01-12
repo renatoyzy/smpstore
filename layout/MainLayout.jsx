@@ -13,11 +13,10 @@ export default function MainLayout({ children }) {
     const router = useRouter();
 
     const navLinks = [
-        { href: DISCORD_LINK, label: "Discord", target: "_blank", rel: "noopener noreferrer" },
-        { href: "/shop", label: "Loja" },
-        { href: "/", label: "Início" },
+        { href: "/", label: "Loja" },
         { href: "/terms", label: "Termos" },
         { href: "/privacy", label: "Privacidade" },
+        { href: DISCORD_LINK, label: "Discord", target: "_blank", rel: "noopener noreferrer" }
     ];
 
     return (

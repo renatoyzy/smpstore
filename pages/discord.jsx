@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export const DISCORD_LINK = 'https://discord.gg/v5wB6bNHcn';
+export const DISCORD_LINK = 'https://discord.gg/Xe9evKrKaX';
 
 export default function Discord() {
 
