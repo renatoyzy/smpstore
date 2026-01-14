@@ -25,10 +25,29 @@ export const PRODUCTS = {
     'Produtos': [
         {
             name: 'VIP',
-            id: 'vip',
-            price: 10.1,
-            description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais como melhorias cosméticas e o /ec!',
-            expanded_description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais como melhorias cosméticas e o /ec! Além disso, você ajuda a manter o servidor ativo e em crescimento. O VIP dura 30 dias e é renovável.',
+            id: 'vip1',
+            price: 9.99,
+            description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais como melhorias como /apelido e o /ec (ender chest)!',
+            expanded_description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais como melhorias cosméticas (/apelido) e o /ec (para abrir o ender chest)! Além disso, você ajuda a manter o servidor ativo e em crescimento. O VIP dura 30 dias e é renovável.',
+            icon: 'https://minecraft.wiki/images/Apple_JE3_BE3.png?3853a',
+            fields: [
+                {
+                    name: 'quantity',
+                    type: 'number',
+                    placeholder: 'Meses (1-100)',
+                    required: true,
+                    min: 1,
+                    max: 100,
+                    value: 1,
+                },
+            ],
+        },
+        {
+            name: 'VIP+',
+            id: 'vip2',
+            price: 17.99,
+            description: 'Quer mais? Um ender chest maior, opção de desligar spawn de phantoms e bigorna virtual com /anvil? O VIP+ é ideal para ostentar ainda mais!',
+            expanded_description: 'Inclui todas as vantagens do VIP (/apelido e /ec) e ainda mais: ender chest aumentado, desligar spawn de phantoms e /anvil (bigorna virtual). O VIP+ dura 30 dias e é renovável.',
             icon: 'https://minecraft.wiki/images/Golden_Apple_JE2_BE2.png?aa827',
             fields: [
                 {
@@ -42,7 +61,36 @@ export const PRODUCTS = {
                 },
             ],
         },
+        {
+            name: 'MVP',
+            id: 'vip3',
+            price: 25.99,
+            description: 'O melhor sempre fica por último! Tenha todas as vantagens de VIP e VIP+ somadas ao /craft, /home e TPA sem delay!',
+            expanded_description: 'Tenha todas as vantagens do VIP (/ec e /apelido), VIP+ (/anvil, desligar spawn de phantoms) e ainda mais: ender chest ainda maior, /craft, /home e TPA sem delay!. O VIP MVP dura 30 dias e é renovável.',
+            icon: 'https://minecraft.wiki/images/Enchanted_Golden_Apple_JE2_BE2.gif?f4719',
+            fields: [
+                {
+                    name: 'quantity',
+                    type: 'number',
+                    placeholder: 'Meses (1-100)',
+                    required: true,
+                    min: 1,
+                    max: 100,
+                    value: 1,
+                },
+            ],
+        },
     ],
+    'Upgrades': [
+        {
+            name: 'Melhorar VIP',
+            id: 'vip_upgrade',
+            price: 7.99,
+            description: 'Se você comprou um VIP e quer melhorar pra VIP+ ou comprou VIP+ e quer melhorar pra MVP, compre para melhorar o seu VIP!',
+            expanded_description: 'Se você comprou um VIP e quer melhorar pra VIP+ ou comprou VIP+ e quer melhorar pra MVP, compre para melhorar o seu VIP! (A compra da melhoria do VIP não altera a data de expiração do mesmo).',
+            icon: 'https://minecraft.wiki/images/Gold_Ingot_JE4_BE2.png?80cd6',
+        }
+    ]
 }
 
 /**
