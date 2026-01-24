@@ -86,11 +86,11 @@ export const PRODUCTS = {
  * Cupons disponíveis
  */
 export const COUPONS = {
-    'MEA': 0.05,
     'JAKE': 0.05,
-    'JUAUM': 0.05,
-    'WOLFS': 0.05,
-    'GATINHO': 0.05,
+    'YOHAN': 0.05,
+    'JUAN': 0.05,
+    'MR': 0.05,
+    'OLFS': 0.05,
 }
 
 /**
