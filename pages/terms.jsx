@@ -8,9 +8,9 @@ export default function Terms() {
   return (
     <>
       <CustomHead
-        pageTitle="Terra Média - Termos de Uso"
-        pageDescription="Leia os termos de uso da loja do Terra Média e saiba mais sobre suas responsabilidades ao utilizar nossos serviços."
-        pageUrl="https://smpraiz.com.br/terms"
+        pageTitle="Legião Templária - Termos de Uso"
+        pageDescription="Leia os termos de uso da loja do Legião Templária e saiba mais sobre suas responsabilidades ao utilizar nossos serviços."
+        pageUrl="https://legiaotemplaria.com/terms"
       />
 
       <MainLayout>
@@ -42,7 +42,7 @@ export default function Terms() {
               6. Lei Aplicável: Estes termos serão regidos e interpretados de acordo com as leis do Brasil.
             </p>
             <p>
-              O uso contínuo ou realização de qualquer compra em nosso site será considerado como aceitação dos nossos termos de uso. Se você tiver alguma dúvida sobre estes termos, entre em contato conosco no <Link href={'/discord'}>Discord do Terra Média</Link> antes de usar a loja.
+              O uso contínuo ou realização de qualquer compra em nosso site será considerado como aceitação dos nossos termos de uso. Se você tiver alguma dúvida sobre estes termos, entre em contato conosco no <Link href={'/discord'}>Discord do Legião Templária</Link> antes de usar a loja.
             </p>
           </div>
 

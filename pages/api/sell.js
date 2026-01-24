@@ -93,7 +93,7 @@ function getPriceByProductId(productId) {
 }
 
 function buildDescription({ product, productName, player, color, custom_color }) {
-  let desc = `[Terra Média] Produto: ${productName} (${product}) | Jogador: ${player}`;
+  let desc = `[Legião Templária] Produto: ${productName} (${product}) | Jogador: ${player}`;
   if (color) desc += ` | Cor: ${color}`;
   if (custom_color) desc += ` | Cor Customizada: ${custom_color}`;
   return desc;

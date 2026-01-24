@@ -11,11 +11,11 @@ import Head from 'next/head';
  * @returns 
  */
 export default function CustomHead({
-    pageTitle="Terra Média - Minecraft de verdade!",
-    pageDescription="Participe do SMP mais raiz do Brasil, com semi-anarquia, liberdade e sobrevivência de verdade!",
+    pageTitle="Legião Templária - Minecraft Medieval!",
+    pageDescription="Se aventure em um servidor de Minecraft repleto de reinos poderosos e desafios de fantasia medieval!",
     pageImage="/favicon.png",
-    pageImageAlt="Ícone do Terra Média",
-    pageUrl="https://smpraiz.com.br"
+    pageImageAlt="Ícone do Legião Templária",
+    pageUrl="https://legiaotemplaria.com"
 }) {
     return (
         <Head>

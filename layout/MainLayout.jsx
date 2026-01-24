@@ -23,7 +23,7 @@ export default function MainLayout({ children }) {
     return (
         <>
             <header className={styles.header}>
-                <h1>Terra Média</h1>
+                <h1>Legião Templária</h1>
 
                 <nav>
                     {navLinks.map(link => (

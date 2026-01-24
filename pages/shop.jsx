@@ -28,9 +28,9 @@ export default function Shop() {
   return (
     <>
       <CustomHead 
-        pageTitle="Terra Média - Loja!"
-        pageDescription="Compre ranks, kits e outros itens cosméticos para o Terra Média. Apoie o servidor e melhore sua experiência de jogo!"
-        pageUrl="https://smpraiz.com.br"
+        pageTitle="Legião Templária - Loja!"
+        pageDescription="Compre ranks, kits e outros itens cosméticos para o Legião Templária. Apoie o servidor e melhore sua experiência de jogo!"
+        pageUrl="https://legiaotemplaria.com"
       />
 
       <MainLayout>

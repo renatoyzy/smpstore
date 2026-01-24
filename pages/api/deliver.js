@@ -15,11 +15,11 @@ async function sendDiscordNotification({ player, productName, amount = 1, quanti
   coupon && fields.push({ name: "Cupom", value: `\`${coupon}\``, inline: true });
 
   const embed = {
-    title: "🛒 Nova compra no Terra Média!",
+    title: "🛒 Nova compra no Legião Templária!",
     color: 0x00FF00,
     fields,
     timestamp: new Date().toISOString(),
-    footer: { text: "Terra Média - Minecraft de verdade!" }
+    footer: { text: "Legião Templária - Minecraft Medieval!" }
   };
 
   await fetch(webhookUrl, {
@@ -39,7 +39,7 @@ function buildCommand({ player, product, extra, quantity=1 }) {
     case 'kitend':
       return `smpstore kitend ${player} ${quantity}`;
     default:
-      return `msg ${player} Obrigado pela compra no Terra Média!`;
+      return `msg ${player} Obrigado pela compra no Legião Templária!`;
   }
 }
 
