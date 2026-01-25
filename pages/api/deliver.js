@@ -38,6 +38,8 @@ function buildCommand({ player, product, extra, quantity=1 }) {
       return `smpstore kitnether ${player} ${quantity}`;
     case 'kitend':
       return `smpstore kitend ${player} ${quantity}`;
+    case 'mudar_raça':
+      return `smpstore mudar_raça ${player}`;
     default:
       return `msg ${player} Obrigado pela compra no Legião Templária!`;
   }

@@ -22,6 +22,16 @@ function translateStatus(status) {
  * Produtos disponíveis na loja
  */
 export const PRODUCTS = {
+    'Roleplay': [
+        {
+            name: 'Mudar de Raça',
+            id: 'mudar_raça',
+            price: 4.99,
+            description: 'Altere a raça do seu personagem no servidor!',
+            expanded_description: 'Compre o item "Mudar de Raça" e tenha a liberdade de alterar a raça do seu personagem no servidor Legião Templária. Seja você um humano, elfo, anão ou qualquer outra raça disponível, essa compra permite que você mude sua raça atual para uma nova. Você irá escolher qual raça quer dentro do Minecraft, após comprar.',
+            icon: 'https://minecraft.wiki/images/Potion_of_Healing_JE2_BE2.png?d579c',
+        }
+    ],
     'Construção': [
         {
             name: 'Kit Nether',
