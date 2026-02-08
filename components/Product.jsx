@@ -270,6 +270,7 @@ function ProductPopup({ product }) {
             modal
             nested
             onClose={resetPopup}
+            disabled={true}
         >
             {close => (
                 <div className="modal">
