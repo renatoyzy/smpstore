@@ -140,7 +140,7 @@ export const PRODUCTS = {
         {
             name: 'Banimento Temporário de Jogador',
             id: 'tempban',
-            price: 5.32,
+            price: 10.64,
             description: 'Bane um jogador do servidor por um período temporário.',
             expanded_description: 'Compre o item "Banimento Temporário de Jogador" e escolha um jogador para ser banido do servidor. Essa é uma forma divertida de lidar com jogadores indesejados. Use com responsabilidade e divirta-se!',
             icon: 'https://minecraft.wiki/images/Barrier_%28held%29_JE2_BE2.png?c4806',
