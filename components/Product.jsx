@@ -22,6 +22,75 @@ function translateStatus(status) {
  * Produtos disponíveis na loja
  */
 export const PRODUCTS = {
+    'Produtos': [
+        {
+            name: 'VIP',
+            id: 'vip1',
+            price: 10.64,
+            description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais como melhorias como /apelido e o /ec (ender chest)!',
+            expanded_description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais como melhorias cosméticas (/apelido) e o /ec (para abrir o ender chest)! Além disso, você ajuda a manter o servidor ativo e em crescimento. O VIP dura 30 dias e é renovável.',
+            icon: 'https://minecraft.wiki/images/Apple_JE3_BE3.png?3853a',
+            fields: [
+                {
+                    name: 'quantity',
+                    type: 'number',
+                    placeholder: 'Meses (1-100)',
+                    required: true,
+                    min: 1,
+                    max: 100,
+                    value: 1,
+                },
+            ],
+        },
+        {
+            name: 'VIP+',
+            id: 'vip2',
+            price: 19.15,
+            description: 'Quer mais? Um ender chest maior, opção de desligar spawn de phantoms e bigorna virtual com /anvil? O VIP+ é ideal para ostentar ainda mais!',
+            expanded_description: 'Inclui todas as vantagens do VIP (/apelido e /ec) e ainda mais: ender chest aumentado, desligar spawn de phantoms e /anvil (bigorna virtual). O VIP+ dura 30 dias e é renovável.',
+            icon: 'https://minecraft.wiki/images/Golden_Apple_JE2_BE2.png?aa827',
+            fields: [
+                {
+                    name: 'quantity',
+                    type: 'number',
+                    placeholder: 'Meses (1-100)',
+                    required: true,
+                    min: 1,
+                    max: 100,
+                    value: 1,
+                },
+            ],
+        },
+        {
+            name: 'MVP',
+            id: 'vip3',
+            price: 27.66,
+            description: 'O melhor sempre fica por último! Tenha todas as vantagens de VIP e VIP+ somadas ao /craft e um ender chest ainda maior!',
+            expanded_description: 'Tenha todas as vantagens do VIP (/ec e /apelido), VIP+ (/anvil, desligar spawn de phantoms) e ainda mais: ender chest ainda maior e /craft!. O VIP MVP dura 30 dias e é renovável.',
+            icon: 'https://minecraft.wiki/images/Enchanted_Golden_Apple_JE2_BE2.gif?f4719',
+            fields: [
+                {
+                    name: 'quantity',
+                    type: 'number',
+                    placeholder: 'Meses (1-100)',
+                    required: true,
+                    min: 1,
+                    max: 100,
+                    value: 1,
+                },
+            ],
+        },
+    ],
+    'Upgrades': [
+        {
+            name: 'Melhorar VIP',
+            id: 'vip_upgrade',
+            price: 8.52,
+            description: 'Se você comprou um VIP e quer melhorar pra VIP+ ou comprou VIP+ e quer melhorar pra MVP, compre para melhorar o seu VIP!',
+            expanded_description: 'Se você comprou um VIP e quer melhorar pra VIP+ ou comprou VIP+ e quer melhorar pra MVP, compre para melhorar o seu VIP! (A compra da melhoria do VIP não altera a data de expiração do mesmo).',
+            icon: 'https://minecraft.wiki/images/Gold_Ingot_JE4_BE2.png?80cd6',
+        }
+    ],
     'Roleplay': [
         {
             name: 'Mudar de Classe ou Raça',
@@ -32,11 +101,11 @@ export const PRODUCTS = {
             icon: 'https://minecraft.wiki/images/Potion_of_Healing_JE2_BE2.png?d579c',
         }
     ],
-    'Construção': [
+    'Kits': [
         {
             name: 'Kit Nether',
-            id: 'kitnether',
-            price: 6.38,
+            id: 'kit_nether',
+            price: 6.39,
             description: 'Blocos de construção aleatórios da dimensão do Nether.',
             expanded_description: 'Na compra de um Kit Nether, você pode receber de 1 unidade a 1 pack de cada um dos seguintes itens: netherrack, areias da alma, pedras-negras, madeiras (carmesim OU distorcida), blocos de tijolos do nether, pedra luminosa, cogubrilho, cristal de quartzo, blocos de fungo do nether (azul OU vermelho, será o mesmo que a madeira). As quantidades são aleatórias por compra e dependerão da sua sorte, com pelo menos 1 de cada item sendo garantido.',
             icon: 'https://minecraft.wiki/images/Chest.gif?ca959',
@@ -54,8 +123,8 @@ export const PRODUCTS = {
         },
         {
             name: 'Kit End',
-            id: 'kitend',
-            price: 6.38,
+            id: 'kit_end',
+            price: 6.39,
             description: 'Blocos de construção aleatórios da dimensão do The End.',
             expanded_description: 'Na compra de um Kit End, você pode receber de 1 unidade a 1 pack de cada um dos seguintes itens: pedra do end, obsidian, lâmpada do end e bloco púrpura. As quantidades são aleatórias por compra e dependerão da sua sorte, com pelo menos 1 de cada item sendo garantido. Além disso, você ganha uma quantidade de 0 a 4 cascos de shulker.',
             icon: 'https://minecraft.wiki/images/Ender_Chest_JE2_BE2.gif?90e80',
@@ -72,24 +141,35 @@ export const PRODUCTS = {
             ],
         }
     ],
-    /*'Cargos': [
+    'Servidor': [
         {
-            name: 'Apoiador',
-            id: 'apoiador',
-            price: 0.01,
-            description: 'Mostre que você é um verdadeiro apoiador do Legião Templária com o rank Apoiador! Com ele, você ganha a satisfação de ajudar o servidor a crescer e melhorar cada vez mais.',
-            expanded_description: 'Mostre que você é um verdadeiro apoiador do Legião Templária com o rank Apoiador! Com ele, você ganha a satisfação de ajudar o servidor a crescer e melhorar cada vez mais. O rank Apoiador é vitalício, ou seja, você não precisa se preocupar em renovar ou perder suas vantagens. Além disso, você estará contribuindo para manter o servidor ativo, com novidades e eventos para toda a comunidade. Seja um Apoiador e faça parte dessa jornada!',
-            icon: 'https://minecraft.wiki/images/Golden_Apple_JE2_BE2.png?aa827',
+            name: 'Banimento Temporário de Jogador',
+            id: 'tempban',
+            price: 5.32,
+            description: 'Bane um jogador do servidor por um período temporário.',
+            expanded_description: 'Compre o item "Banimento Temporário de Jogador" e escolha um jogador para ser banido do servidor. Essa é uma forma divertida de lidar com jogadores indesejados. Use com responsabilidade e divirta-se!',
+            icon: 'https://minecraft.wiki/images/Barrier_%28held%29_JE2_BE2.png?c4806',
+            fields: [
+                {
+                    name: 'quantity',
+                    type: 'number',
+                    placeholder: 'Duração do banimento em dias (1-365)',
+                    required: true,
+                    min: 1,
+                    max: 365,
+                    value: 1,
+                },
+            ]
         },
         {
-            name: 'VIP (30 dias)',
-            id: 'vip1',
-            price: 8.86,
-            description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais como redução no tempo de espera do /home e do /tpa, kits semanais (kit VIP), e 3 homes a mais de brinde!',
-            expanded_description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais como redução no tempo de espera do /home e do /tpa, kits semanais (kit VIP), e 3 homes a mais de brinde! Além disso, você ajuda a manter o servidor ativo e em crescimento. O VIP dura 30 dias e é renovável.',
-            icon: 'https://minecraft.wiki/images/Nether_Star.gif?fb01f',
-        },
-    ],*/
+            name: 'Desbanimento de Jogador',
+            id: 'unban',
+            price: 21.28,
+            description: 'Desbane um jogador do servidor.',
+            expanded_description: 'Compre o item "Desbanimento de Jogador" e escolha um jogador para ser desbanido do servidor. O desbanimento é imediato e o jogador poderá retornar ao servidor imediatamente após a compra.',
+            icon: 'https://minecraft.wiki/images/Diamond_JE3_BE3.png?99d00',
+        }
+    ]
 }
 
 /**
@@ -102,6 +182,10 @@ export const COUPONS = {
     'JUAN': 0.05,
     'MR': 0.05,
     'OLFS': 0.05,
+    'SOBS5': 0.05,
+    'BESBC': 0.05,
+    'BELLS': 0.05,
+    'EVELYN': 0.05
 }
 
 /**

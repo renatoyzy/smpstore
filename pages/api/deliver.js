@@ -35,11 +35,23 @@ async function sendDiscordNotification({ player, productName, amount = 1, quanti
 function buildCommand({ player, product, extra, quantity=1 }) {
   switch (product) {
     case 'kitnether':
-      return `smpstore kitnether ${player} ${quantity}`;
+      return `smpstore kit_nether ${player} ${quantity}`;
     case 'kitend':
-      return `smpstore kitend ${player} ${quantity}`;
+      return `smpstore kit_end ${player} ${quantity}`;
     case 'mudar_raça':
       return `smpstore mudar_raça ${player}`;
+    case 'vip1':
+      return `smpstore vip1 ${player} ${quantity}`;
+    case 'vip2':
+      return `smpstore vip2 ${player} ${quantity}`;
+    case 'vip3':
+      return `smpstore vip3 ${player} ${quantity}`;
+    case 'vip_upgrade':
+      return `smpstore vip_upgrade ${player}`;
+    case 'ban':
+      return `smpstore ban ${player} ${quantity}`;
+    case 'unban':
+      return `smpstore unban ${player}`;
     default:
       return `msg ${player} Obrigado pela compra no Legião Templária!`;
   }
