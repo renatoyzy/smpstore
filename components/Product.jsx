@@ -38,7 +38,6 @@ export const PRODUCTS = {
                     required: true,
                     min: 1,
                     max: 100,
-                    value: 1,
                 },
             ],
         },
@@ -57,7 +56,6 @@ export const PRODUCTS = {
                     required: true,
                     min: 1,
                     max: 100,
-                    value: 1,
                 },
             ],
         },
@@ -76,7 +74,6 @@ export const PRODUCTS = {
                     required: true,
                     min: 1,
                     max: 100,
-                    value: 1,
                 },
             ],
         },
@@ -117,7 +114,6 @@ export const PRODUCTS = {
                     required: true,
                     min: 1,
                     max: 100,
-                    value: 1,
                 },
             ],
         },
@@ -136,7 +132,6 @@ export const PRODUCTS = {
                     required: true,
                     min: 1,
                     max: 100,
-                    value: 1,
                 },
             ],
         }
@@ -157,7 +152,6 @@ export const PRODUCTS = {
                     required: true,
                     min: 1,
                     max: 365,
-                    value: 1,
                 },
             ]
         },
@@ -249,7 +243,7 @@ function ProductPopup({ product }) {
     const [playerName, setPlayerName] = useState('');
     const [coupon, setCoupon] = useState('');
     const [previewPrice, setPreviewPrice] = useState(product.price);
-    const [quantity, setQuantity] = useState(product.fields?.find(f => f.name === 'quantity')?.defaultValue || 1);
+    const [quantity, setQuantity] = useState(product.fields?.find(f => f.name === 'quantity')?.defaultValue || undefined);
     const [couponStatus, setCouponStatus] = useState(null);
 
     const handleFormSubmit = async (e) => {
