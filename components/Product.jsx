@@ -170,16 +170,17 @@ export const PRODUCTS = {
  * Cupons disponíveis
  */
 export const COUPONS = {
-    'RENATO': 0.05,
-    'JAKE': 0.05,
-    'YOHAN': 0.05,
-    'JUAN': 0.05,
-    'MR': 0.05,
-    'OLFS': 0.05,
-    'SOBS5': 0.05,
-    'BESBC': 0.05,
-    'BELLS': 0.05,
-    'EVELYN': 0.05
+    'RENATO': 0.15,
+    'JAKE': 0.15,
+    'YOHAN': 0.15,
+    'JUAN': 0.15,
+    'MR': 0.15,
+    'OLFS': 0.15,
+    'SOBS5': 0.15,
+    'BESBC': 0.15,
+    'BELLS': 0.15,
+    'EVELYN': 0.15,
+    'CARNAVAL2026': 0.25
 }
 
 /**
