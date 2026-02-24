@@ -12,7 +12,7 @@ export default function Shop() {
   useEffect(() => {
     async function fetchStatus() {
       try {
-        const res = await fetch('https://api.mcstatus.io/v2/status/java/br-enx-1.enxadahost.com:10295');
+        const res = await fetch('https://api.mcstatus.io/v2/status/java/enx-cirion-41.enx.host:10295');
         const data = await res.json();
         setStatus(data);
         console.log(data)
