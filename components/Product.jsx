@@ -22,7 +22,7 @@ function translateStatus(status) {
  * Produtos disponíveis na loja
  */
 export const PRODUCTS = {
-    'Produtos': [
+    /*'Produtos': [
         {
             name: 'VIP',
             id: 'vip1',
@@ -94,7 +94,7 @@ export const PRODUCTS = {
             id: 'mudar_raça',
             price: 5.32,
             description: 'Altere a classe ou raça do seu personagem no servidor!',
-            expanded_description: 'Compre o item "Mudar de Classe ou Raça" e tenha a liberdade de alterar a raça ou a classe do seu personagem no Legião Templária. Seja você um humano, elfo, anão ou qualquer outra raça disponível, essa compra permite que você mude sua raça atual para uma nova, além de escolher uma nova classe se for humano. Você irá escolher qual raça e classe quer dentro do Minecraft, após comprar.',
+            expanded_description: 'Compre o item "Mudar de Classe ou Raça" e tenha a liberdade de alterar a raça ou a classe do seu personagem no Cubópolis. Seja você um humano, elfo, anão ou qualquer outra raça disponível, essa compra permite que você mude sua raça atual para uma nova, além de escolher uma nova classe se for humano. Você irá escolher qual raça e classe quer dentro do Minecraft, após comprar.',
             icon: 'https://minecraft.wiki/images/Potion_of_Healing_JE2_BE2.png?d579c',
         }
     ],
@@ -163,24 +163,28 @@ export const PRODUCTS = {
             expanded_description: 'Compre o item "Desbanimento de Jogador" e escolha um jogador para ser desbanido do servidor. O desbanimento é imediato e o jogador poderá retornar ao servidor imediatamente após a compra.',
             icon: 'https://minecraft.wiki/images/Diamond_JE3_BE3.png?99d00',
         }
-    ]
+    ]*/
+   'WIP': [
+    {
+        name: 'Doação',
+        id: 'donation',
+        price: 0.99,
+        description: 'Ainda não há produtos na loja.',
+        expanded_description: 'Produto de teste para desenvolvimento da loja.',
+        icon: 'https://minecraft.wiki/images/Barrier_%28held%29_JE2_BE2.png?c4806&format=original',
+    }
+   ]
 }
 
 /**
  * Cupons disponíveis
  */
 export const COUPONS = {
-    'RENATO': 0.15,
-    'JAKE': 0.15,
-    'YOHAN': 0.15,
-    'JUAN': 0.15,
-    'MR': 0.15,
-    'OLFS': 0.15,
-    'SOBS5': 0.15,
-    'BESBC': 0.15,
-    'BELLS': 0.15,
-    'EVELYN': 0.15,
-    'CARNAVAL2026': 0.25
+    'GUEDEASMP': 0.00,
+    'EIMANESMP': 0.00,
+    'SMPRAIZ': 0.00,
+    'LEGIAOTEMPLARIA': 0.00,
+    'CUBOPOLIS': 0.00
 }
 
 /**
@@ -426,7 +430,7 @@ function ProductPopup({ product }) {
                                         type="text"
                                         name="coupon"
                                         id="coupon"
-                                        placeholder="Cupom de desconto? (ex: SMP10)"
+                                        placeholder="Cupom de desconto? (ex: DESCONTO10)"
                                         value={coupon}
                                         onChange={e => setCoupon(e.target.value.toUpperCase().replace(/[^A-Z0-9]+/g, ''))}
                                     />

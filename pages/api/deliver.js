@@ -15,11 +15,11 @@ async function sendDiscordNotification({ player, productName, amount = 1, quanti
   coupon && fields.push({ name: "Cupom", value: `\`${coupon}\``, inline: true });
 
   const embed = {
-    title: "🛒 Nova compra no Legião Templária!",
+    title: "🛒 Nova compra no Cubópolis!",
     color: 0x00FF00,
     fields,
     timestamp: new Date().toISOString(),
-    footer: { text: "Legião Templária - Minecraft Medieval!" }
+    footer: { text: "Cubópolis - A metrópole do Minecraft!" }
   };
 
   await fetch(webhookUrl, {
@@ -53,7 +53,7 @@ function buildCommand({ player, product, extra, quantity=1 }) {
     case 'unban':
       return `smpstore unban ${player}`;
     default:
-      return `msg ${player} Obrigado pela compra no Legião Templária!`;
+      return `msg ${player} Obrigado pela compra no Cubópolis!`;
   }
 }
 

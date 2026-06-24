@@ -1,1 +1,1 @@
-O SMP RAÍZ é um servidor de Minecraft semi-anárquico que resgata as raízes do survival! Sem frescura, sem proibição, e muita diversão. Esse repositório trata do código-fonte do site desse servidor.
+O Cubópolis é um servidor de Minecraft com temática de cidade, que implementa inúmeras mecânicas inovadoras para proporcionar uma experiência única e imersiva de interação política e econômica entre os jogadores.

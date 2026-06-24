@@ -13,7 +13,7 @@ export default function Home() {
   useEffect(() => {
     async function fetchStatus() {
       try {
-        const res = await fetch('https://api.mcstatus.io/v2/status/java/jogar.legiaotemplaria.com:10295');
+        const res = await fetch('https://api.mcstatus.io/v2/status/java/jogar.cubopolis.com.br:10295');
         const data = await res.json();
         setStatus(data);
       } catch (error) {
@@ -34,14 +34,14 @@ export default function Home() {
         <main className={styles.main}>
           
           <h1>
-            Bem-vindo(a) ao Legião Templária!
+            Bem-vindo(a) ao Cubópolis!
           </h1>
 
           <section className={styles.container}>
             <p>
-              O Legião Templária é um servidor de Minecraft com temática de mundo antigo,
+              O Cubópolis é um servidor de Minecraft com temática de cidade,
               que implementa inúmeras mecânicas inovadoras para proporcionar uma
-              experiência única e imersiva de interação entre os reinos e os jogadores.
+              experiência única e imersiva de interação política e econômica entre os jogadores.
             </p>
           </section>
 
@@ -52,7 +52,7 @@ export default function Home() {
             <p>
               Para entrar no servidor, adicione o seguinte endereço IP no seu Minecraft:
             </p>
-            <input type="text" name="ip" id="Ip" readOnly value={'jogar.legiaotemplaria.com'} onClick={(e) => e.target.select()} />
+            <input type="text" name="ip" id="Ip" readOnly value={'jogar.cubopolis.com.br'} onClick={(e) => e.target.select()} />
             <input type="text" name="port" id="Port" readOnly value={'10295'} onClick={(e) => e.target.select()} />
             <p>
               Você pode jogar no Minecraft Bedrock (qualquer versão) e Minecraft Java Edition (qualquer versão acima da 1.9), seja pirata ou original. A melhor experiência é sempre na versão mais recente!

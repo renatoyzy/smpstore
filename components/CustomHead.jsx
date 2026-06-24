@@ -11,11 +11,11 @@ import Head from 'next/head';
  * @returns 
  */
 export default function CustomHead({
-    pageTitle="Legião Templária - Minecraft Medieval!",
-    pageDescription="Se aventure em um servidor de Minecraft repleto de reinos poderosos e desafios de fantasia medieval!",
+    pageTitle="Cubópolis - A metrópole do Minecraft!",
+    pageDescription="Se aventure em uma cidade com política e economia no Minecraft!",
     pageImage="/favicon.png",
-    pageImageAlt="Ícone do Legião Templária",
-    pageUrl="https://legiaotemplaria.com"
+    pageImageAlt="Ícone do Cubópolis",
+    pageUrl="https://cubopolis.com.br"
 }) {
     return (
         <Head>

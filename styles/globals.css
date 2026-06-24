@@ -44,7 +44,7 @@ body::before {
   top: 0;
   left: 0;
   width: 100dvw;
-  height: 100lvh;
+  height: 110lvh;
   background-image: url('/images/wallpaper.png');
   background-size: cover;
   background-position: center;

@@ -50,7 +50,7 @@ export default async function handler(req, res) {
         description,
         payment_method_id: 'pix',
         payer: {
-          email: `${player}+${Date.now()}@smpraiz.com`,
+          email: `${player}+${Date.now()}@cubopolis.com`,
           first_name: player,
           identification: {
             type: 'CPF',
@@ -93,7 +93,7 @@ function getPriceByProductId(productId) {
 }
 
 function buildDescription({ product, productName, player, color, custom_color }) {
-  let desc = `[Legião Templária] Produto: ${productName} (${product}) | Jogador: ${player}`;
+  let desc = `[Cubópolis] Produto: ${productName} (${product}) | Jogador: ${player}`;
   if (color) desc += ` | Cor: ${color}`;
   if (custom_color) desc += ` | Cor Customizada: ${custom_color}`;
   return desc;

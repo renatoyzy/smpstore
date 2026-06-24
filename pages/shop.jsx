@@ -28,9 +28,9 @@ export default function Shop() {
   return (
     <>
       <CustomHead 
-        pageTitle="Legião Templária - Loja!"
-        pageDescription="Compre ranks, kits e outros itens cosméticos para o Legião Templária. Apoie o servidor e melhore sua experiência de jogo!"
-        pageUrl="https://legiaotemplaria.com"
+        pageTitle="Cubópolis - Loja!"
+        pageDescription="Compre ranks, kits e outros itens cosméticos para o Cubópolis. Apoie o servidor e melhore sua experiência de jogo!"
+        pageUrl="https://cubopolis.com.br"
       />
 
       <MainLayout>
