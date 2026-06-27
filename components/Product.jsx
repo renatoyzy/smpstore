@@ -28,8 +28,8 @@ export const PRODUCTS = {
             id: 'vip',
             price: 10.1,
             description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais e cosméticos interessantes',
-            expanded_description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais como melhorias cosméticas, como: Conseguir colorir o nome de itens na bigorna; Utilizar Veinminer; Utilizar /armadurainvisível para ocultar armadura e também /chapéu para exibir um chapéu cosmético na cabeça, mantendo as propriedades de proteção do capacete original; Criar ImageFrames animados (GIF); Personalizar o próprio nick in-game através do /apelido e Liberação de partículas ao andar! Além disso, você ajuda a manter o servidor ativo e em crescimento. O VIP dura 30 dias e é renovável.',
-            icon: 'https://minecraft.wiki/images/Apple_JE3_BE3.png?3853a',
+            expanded_description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais como melhorias cosméticas, como: Conseguir colorir o nome de itens na bigorna; Utilizar Veinminer; Utilizar /armadurainvisível para ocultar armadura e também /chapéu para exibir um chapéu cosmético na cabeça, mantendo as propriedades de proteção do capacete original; Criar ImageFrames animados (GIF); Personalizar o próprio nick in-game através do /apelido; Enviar mensagens coloridas; Nick azul (única tag com nick colorido) e Liberação de partículas ao andar! Além disso, você ajuda a manter o servidor ativo e em crescimento. O VIP dura 30 dias e é renovável.',
+            icon: 'https://minecraft.wiki/images/Diamond_JE3_BE3.png?99d00',
             fields: [
                 {
                     name: 'quantity',
