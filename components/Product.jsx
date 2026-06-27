@@ -3,6 +3,8 @@ import Popup from 'reactjs-popup';
 import Link from "next/link";
 import { useEffect, useState } from 'react';
 
+const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
+
 /**
  * Traduz o status do pagamento
  * @param {String} status - Status do pagamento 
@@ -155,11 +157,11 @@ function ProductPopup({ product }) {
     useEffect(() => {
         let basePrice = product.price;
         let qty = Number(quantity) || 1;
-        let finalPrice = basePrice * qty;
+        let finalPrice = clamp(basePrice * qty, 0.01, 999999);
 
         // Simulação de cupom (pode ser adaptado para API)
         if (Object.keys(COUPONS).includes(coupon.trim().toUpperCase())) {
-            finalPrice = finalPrice * (1 - COUPONS[coupon.trim().toUpperCase()]);
+            finalPrice = clamp(finalPrice * (1 - COUPONS[coupon.trim().toUpperCase()]), 0.01, 999999);
             setCouponStatus(`Cupom aplicado: ${COUPONS[coupon.trim().toUpperCase()] * 100}% de desconto!`);
         } else if (coupon.trim()) {
             setCouponStatus('Cupom inválido ou expirado.');

@@ -2,6 +2,7 @@ import { MercadoPagoConfig, Payment } from "mercadopago";
 import { PRODUCTS, COUPONS } from "@/components/Product"; // ajuste o caminho se necessário
 
 const useSandbox = String(process.env.USE_SANDBOX).toUpperCase() === 'TRUE';
+const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
 
 const client = new MercadoPagoConfig({
   accessToken: useSandbox
@@ -40,7 +41,7 @@ export default async function handler(req, res) {
     }
 
     // Arredonda para 2 casas decimais
-    amount = Number(amount.toFixed(2));
+    amount = clamp(Number(amount.toFixed(2)), 0.01, 999999);
 
     const description = buildDescription({ product, productName, player, color, custom_color });
 
