@@ -53,7 +53,7 @@ export const COUPONS = {
     'SMPRAIZ': 0.00,
     'LEGIAOTEMPLARIA': 0.00,
     'CUBOPOLIS': 0.00,
-    'LHAMOTV': 0.99
+    'LHAMOTVSEGREDO': 0.9999
 }
 
 /**
