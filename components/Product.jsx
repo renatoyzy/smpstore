@@ -22,13 +22,13 @@ function translateStatus(status) {
  * Produtos disponíveis na loja
  */
 export const PRODUCTS = {
-    /*'Produtos': [
+    'Produtos': [
         {
             name: 'VIP',
-            id: 'vip1',
-            price: 10.64,
-            description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais como melhorias como /apelido e o /enderchest (ender chest)!',
-            expanded_description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais como melhorias cosméticas (/apelido) e o /enderchest (para abrir o ender chest)! Além disso, você ajuda a manter o servidor ativo e em crescimento. O VIP dura 30 dias e é renovável.',
+            id: 'vip',
+            price: 10.1,
+            description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais e cosméticos interessantes',
+            expanded_description: 'O VIP é o rank mais popular do servidor, com várias vantagens legais como melhorias cosméticas, como: Conseguir colorir o nome de itens na bigorna; Utilizar Veinminer; Utilizar /armadurainvisível para ocultar armadura e também /chapéu para exibir um chapéu cosmético na cabeça, mantendo as propriedades de proteção do capacete original; Criar ImageFrames animados (GIF); Personalizar o próprio nick in-game através do /apelido e Liberação de partículas ao andar! Além disso, você ajuda a manter o servidor ativo e em crescimento. O VIP dura 30 dias e é renovável.',
             icon: 'https://minecraft.wiki/images/Apple_JE3_BE3.png?3853a',
             fields: [
                 {
@@ -40,140 +40,8 @@ export const PRODUCTS = {
                     max: 12,
                 },
             ],
-        },
-        {
-            name: 'VIP+',
-            id: 'vip2',
-            price: 19.15,
-            description: 'Quer mais? Um ender chest maior, opção de desativar spawn de phantoms com /phantoms e bigorna virtual com /bigorna? O VIP+ é ideal para ostentar ainda mais!',
-            expanded_description: 'Inclui todas as vantagens do VIP (/apelido e /enderchest) e ainda mais: ender chest aumentado, desativar spawn de phantoms com /phantoms e /bigorna (bigorna virtual). O VIP+ dura 30 dias e é renovável.',
-            icon: 'https://minecraft.wiki/images/Golden_Apple_JE2_BE2.png?aa827',
-            fields: [
-                {
-                    name: 'quantity',
-                    type: 'number',
-                    placeholder: 'Meses (1-12)',
-                    required: true,
-                    min: 1,
-                    max: 12,
-                },
-            ],
-        },
-        {
-            name: 'MVP',
-            id: 'vip3',
-            price: 27.66,
-            description: 'O melhor sempre fica por último! Tenha todas as vantagens de VIP e VIP+ somadas ao /craft e um ender chest ainda maior!',
-            expanded_description: 'Tenha todas as vantagens do VIP (/enderchest e /apelido), VIP+ (/bigorna, desativar spawn de phantoms com /phantoms) e ainda mais: ender chest ainda maior e /craft!. O VIP MVP dura 30 dias e é renovável.',
-            icon: 'https://minecraft.wiki/images/Enchanted_Golden_Apple_JE2_BE2.gif?f4719',
-            fields: [
-                {
-                    name: 'quantity',
-                    type: 'number',
-                    placeholder: 'Meses (1-12)',
-                    required: true,
-                    min: 1,
-                    max: 12,
-                },
-            ],
-        },
-    ],
-    'Upgrades': [
-        {
-            name: 'Melhorar VIP',
-            id: 'vip_upgrade',
-            price: 8.52,
-            description: 'Se você comprou um VIP e quer melhorar pra VIP+ ou comprou VIP+ e quer melhorar pra MVP, compre para melhorar o seu VIP!',
-            expanded_description: 'Se você comprou um VIP e quer melhorar pra VIP+ ou comprou VIP+ e quer melhorar pra MVP, compre para melhorar o seu VIP! (A compra da melhoria do VIP não altera a data de expiração do mesmo).',
-            icon: 'https://minecraft.wiki/images/Gold_Ingot_JE4_BE2.png?80cd6',
         }
     ],
-    'Roleplay': [
-        {
-            name: 'Mudar de Classe ou Raça',
-            id: 'mudar_raça',
-            price: 5.32,
-            description: 'Altere a classe ou raça do seu personagem no servidor!',
-            expanded_description: 'Compre o item "Mudar de Classe ou Raça" e tenha a liberdade de alterar a raça ou a classe do seu personagem no Cubópolis. Seja você um humano, elfo, anão ou qualquer outra raça disponível, essa compra permite que você mude sua raça atual para uma nova, além de escolher uma nova classe se for humano. Você irá escolher qual raça e classe quer dentro do Minecraft, após comprar.',
-            icon: 'https://minecraft.wiki/images/Potion_of_Healing_JE2_BE2.png?d579c',
-        }
-    ],
-    'Kits': [
-        {
-            name: 'Kit Nether',
-            id: 'kit_nether',
-            price: 6.39,
-            description: 'Blocos de construção aleatórios da dimensão do Nether.',
-            expanded_description: 'Na compra de um Kit Nether, você pode receber de 1 unidade a 1 pack de cada um dos seguintes itens: netherrack, areias da alma, pedras-negras, madeiras (carmesim OU distorcida), blocos de tijolos do nether, pedra luminosa, cogubrilho, cristal de quartzo, blocos de fungo do nether (azul OU vermelho, será o mesmo que a madeira). As quantidades são aleatórias por compra e dependerão da sua sorte, com pelo menos 1 de cada item sendo garantido.',
-            icon: 'https://minecraft.wiki/images/Chest.gif?ca959',
-            fields: [
-                {
-                    name: 'quantity',
-                    type: 'number',
-                    placeholder: 'Quantidade de kits (1-100)',
-                    required: true,
-                    min: 1,
-                    max: 100,
-                },
-            ],
-        },
-        {
-            name: 'Kit End',
-            id: 'kit_end',
-            price: 6.39,
-            description: 'Blocos de construção aleatórios da dimensão do The End.',
-            expanded_description: 'Na compra de um Kit End, você pode receber de 1 unidade a 1 pack de cada um dos seguintes itens: pedra do end, obsidian, lâmpada do end e bloco púrpura. As quantidades são aleatórias por compra e dependerão da sua sorte, com pelo menos 1 de cada item sendo garantido. Além disso, você ganha uma quantidade de 0 a 4 cascos de shulker.',
-            icon: 'https://minecraft.wiki/images/Ender_Chest_JE2_BE2.gif?90e80',
-            fields: [
-                {
-                    name: 'quantity',
-                    type: 'number',
-                    placeholder: 'Quantidade de kits (1-100)',
-                    required: true,
-                    min: 1,
-                    max: 100,
-                },
-            ],
-        }
-    ],
-    'Servidor': [
-        {
-            name: 'Banimento Temporário de Jogador',
-            id: 'tempban',
-            price: 10.64,
-            description: 'Bane um jogador do servidor por um período temporário.',
-            expanded_description: 'Compre o item "Banimento Temporário de Jogador" e escolha um jogador para ser banido do servidor. Essa é uma forma divertida de lidar com jogadores indesejados. Use com responsabilidade e divirta-se!',
-            icon: 'https://minecraft.wiki/images/Barrier_%28held%29_JE2_BE2.png?c4806',
-            fields: [
-                {
-                    name: 'quantity',
-                    type: 'number',
-                    placeholder: 'Duração do banimento em dias (1-365)',
-                    required: true,
-                    min: 1,
-                    max: 365,
-                },
-            ]
-        },
-        {
-            name: 'Desbanimento de Jogador',
-            id: 'unban',
-            price: 21.28,
-            description: 'Desbane um jogador do servidor.',
-            expanded_description: 'Compre o item "Desbanimento de Jogador" e escolha um jogador para ser desbanido do servidor. O desbanimento é imediato e o jogador poderá retornar ao servidor imediatamente após a compra.',
-            icon: 'https://minecraft.wiki/images/Diamond_JE3_BE3.png?99d00',
-        }
-    ]*/
-   'WIP': [
-    {
-        name: 'Doação',
-        id: 'donation',
-        price: 0.99,
-        description: 'Ainda não há produtos na loja.',
-        expanded_description: 'Produto de teste para desenvolvimento da loja.',
-        icon: 'https://minecraft.wiki/images/Barrier_%28held%29_JE2_BE2.png?c4806&format=original',
-    }
-   ]
 }
 
 /**
